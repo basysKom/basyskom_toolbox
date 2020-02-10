@@ -7,6 +7,8 @@
 | Environment           | Qt/C++ |
 | Platform              | All |
 | Implementation effort | Very minimal when introduced early on. |
+| Applicability | New projects, new modules within existing projects. As a preparation for a porting effort. |
+| Caveats| Might conflict with Wall/Werror. Might be hard to apply when extending existing code bases|
 | See also              | |
 
 ## Implementation hints
