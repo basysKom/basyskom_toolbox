@@ -28,21 +28,19 @@ Existing projects: Review the project settings - make sure they are on.
 
 ## Caveats
 
-Existing project where warnings had been disabled for a long time can generate hundreds of warnings. Talk to the customer about it. It is dangerous (and potentially expensive) to work like that.
+Existing projects where warnings had been disabled for a long time can generate hundreds of warnings. This should be addressed It is dangerous (and potentially expensive) to work like that.
 
 Potential way to use warning in such projects:
 
-* Enable Wall
+* Enable `-Wall`
 * Selectively disable warnings which are very noisy and not too serious.
 * Review the rest.
-* Communicate with the customer. Most can see the point when being shown a list of serious warnings.
+* Communicate with the stakeholders and fix the most serious.
 * Cut down on the number of disabled warnings over time.
-
-This approach has been successfully implemented a number of times.
 
 ## See also
 
-// Warnings as erros
+* [Treat warnings as error](https://toolbox.basyskom.com/11)
 
 ## Implementation hints
 
