@@ -1,15 +1,34 @@
-# Avoid deprecated Qt
+# Title: Avoid deprecated Qt
 
-| Topic                 | Details |
-|-----------------------|----------------------------|
-| Goal                  | New code should not make use of Qt APIs already marked deprecated. Avoid unpleasant surprises by keeping an eye on deprecated APIs.|
-| Description           | Qt is deprecating APIs or parts of APIs during its minor release cycles. Deprecated API stays around till the next major release. The compiler can give warnings when such APIs are used. |
-| Environment           | Qt/C++ |
-| Platform              | All |
-| Implementation effort | Very minimal when introduced early on. |
-| Applicability | New projects, new modules within existing projects. As a preparation for a porting effort. |
-| Caveats| Might conflict with Wall/Werror. Might be hard to apply when extending existing code bases|
-| See also              | |
+## Goals
+
+New code should not make use of Qt APIs already marked deprecated. Avoid unpleasant surprises by keeping an eye on deprecated APIs.|
+
+## Description
+
+Qt is deprecating APIs or parts of APIs during its minor release cycles. Deprecated API stays around till the next major release. The compiler can give warnings when such APIs are used.
+
+## Environment
+
+Qt/C++
+
+## Platform
+
+All
+
+## Implementation effort
+
+Very minimal when introduced early on.
+
+## Applicability
+
+New projects, new modules within existing projects. As a preparation for a porting effort.
+
+## Caveats
+
+Might conflict with Wall/Werror. Might be hard to apply when extending existing code bases.
+
+## See also
 
 ## Implementation hints
 
