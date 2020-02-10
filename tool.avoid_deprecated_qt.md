@@ -1,4 +1,4 @@
-# Title: Avoid deprecated Qt
+# Avoid deprecated Qt
 
 ## Goals
 
@@ -6,7 +6,9 @@ Avoid deprecated Qt
 
 ## Description
 
-A defining quality of Qt is that it provides long-term API stability within a major release (e.g. Qt 5) which historically translates to roughly 7-8 years. To communicate up-front which APIs (or parts of an API) might be affected by a change in the next major release, deprecation warnings are added to the headers of Qt as a continuous process. Make sure to enable these deprecation warnings to stay up-to-date how your application might be affected by Qt API changes and to ease the transition to new Qt versions over time.
+A defining quality of Qt is that it provides long-term API stability within a major release (e.g. Qt 5) which historically translates to
+roughly 7-8 years. To communicate up-front which APIs (or parts of an
+API) might be affected by a change in the next major release, deprecation warnings are added to the headers of Qt as a continuous process. Make sure to enable these deprecation warnings to stay up-to-date how your application might be affected by Qt API changes and to ease the transition to new Qt versions over time.
 
 ## Environment
 
@@ -18,7 +20,7 @@ All
 
 ## Implementation effort
 
-Very minimal.
+Very minimal
 
 ## Applicability
 
@@ -26,9 +28,11 @@ New projects, new modules within existing projects. As a preparation for a porti
 
 ## Caveats
 
-Might conflict with -Wall/-Werror.
+Might conflict with -Werror.
 
 ## See also
+
+* [Treat warnings as error](https://toolbox.basyskom.com/11)
 
 ## Implementation hints
 
