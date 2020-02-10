@@ -2,11 +2,11 @@
 
 ## Goals
 
-New code should not make use of Qt APIs already marked deprecated. Avoid unpleasant surprises by keeping an eye on deprecated APIs.|
+Avoid deprecated Qt
 
 ## Description
 
-Qt is deprecating APIs or parts of APIs during its minor release cycles. Deprecated API stays around till the next major release. The compiler can give warnings when such APIs are used.
+A defining quality of Qt is that it provides long-term API stability within a major release (e.g. Qt 5) which historically translates to roughly 7-8 years. To communicate up-front which APIs (or parts of an API) might be affected by a change in the next major release, deprecation warnings are added to the headers of Qt as a continuous process. Make sure to enable these deprecation warnings to stay up-to-date how your application might be affected by Qt API changes and to ease the transition to new Qt versions over time.
 
 ## Environment
 
@@ -18,7 +18,7 @@ All
 
 ## Implementation effort
 
-Very minimal when introduced early on.
+Very minimal.
 
 ## Applicability
 
@@ -26,7 +26,7 @@ New projects, new modules within existing projects. As a preparation for a porti
 
 ## Caveats
 
-Might conflict with Wall/Werror. Might be hard to apply when extending existing code bases.
+Might conflict with -Wall/-Werror.
 
 ## See also
 
