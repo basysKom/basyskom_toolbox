@@ -2,7 +2,7 @@
 
 ## Goals
 
-Prevent problematic code from "creeping" in.
+Prevent problematic code from silently "creeping" in.
 
 ## Description
 
@@ -22,7 +22,7 @@ Minor, given that your project is already compiling without warnings.
 
 ## Applicability
 
-?? FIXME
+All projects with a clearly defined target toolchain.
 
 ## Caveats
 
