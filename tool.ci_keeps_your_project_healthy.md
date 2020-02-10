@@ -18,7 +18,7 @@ All
 
 ## Implementation effort
 
-Highly project dependent.
+Low to medium - provided that a project already implements "Proper automatic builds" and has a practical way to manage external dependencies.
 
 ## Applicability
 
@@ -28,8 +28,9 @@ A must-have if there is more then one developer involved with the project.
 
 ## See also
 
+* [Proper automated builds](https://toolbox.basyskom.com/FIXME_have_we_lost_this_card?)
+
 ## Implementation hints
 
-If on-premise is a must have a look into Jenkins or gitlab-ci. If the cloud is an option look into Travis or AppVeyor (for Windows).
-
-Put your CI-project description into version control together with the project source itself.
+* If "on-premise" is a must have a look into Jenkins or gitlab-ci. If the cloud is an option look into Travis or AppVeyor (for Windows).
+* Traditionally the CI configuration of a project was kept separated from the project itself (often even outside of version control). Placing the CI configuration alongside the actual project nowadays supported by a lot of systems and is adding a lot of control and flexibility. Examples are Jenkins pipelines or Travis yaml files.
