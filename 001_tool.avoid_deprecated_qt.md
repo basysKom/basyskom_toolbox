@@ -54,4 +54,3 @@ DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x050200
 
 Removes everything what is deprecated since Qt 5.2 from the headers.
 
-<img src="tool.avoid_deprecated_qt.card.png" alt="drawing" width="250"/>
