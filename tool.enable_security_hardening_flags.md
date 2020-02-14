@@ -22,6 +22,8 @@ Low
 
 ## Applicability
 
+All software which deals with untrusty third party inputs.
+
 ## Caveats
 
 * Try to enable these flags early on as there might be side effects which are easier to track down outside of a release window...
@@ -49,3 +51,5 @@ Visual Studio: FIXME
 ```
     ?? /RTC? /GS?, Control Flow Guard?
 ```
+
+For Embedded-Linux scenarios it might be better to globally enable these flags at an image level.
