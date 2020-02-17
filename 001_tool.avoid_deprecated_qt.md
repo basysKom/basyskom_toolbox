@@ -28,11 +28,12 @@ New projects, new modules within existing projects. As a preparation for a porti
 
 ## Caveats
 
-Might conflict with -Werror.
+- Might conflict with -Werror.
+- Doesn't help to catch the usage of deprecated QML modules.
 
 ## See also
 
-* [Treat warnings as error](https://toolbox.basyskom.com/11)
+- [Treat warnings as error](https://toolbox.basyskom.com/11)
 
 ## Implementation hints
 
@@ -52,5 +53,4 @@ Variant2: my.pro
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x050200
 ```
 
-Removes everything what is deprecated since Qt 5.2 from the headers.
-
+Removes everything that has deprecated since Qt 5.2 from the Qt headers (causing the build to fail of deprecated code is used).
