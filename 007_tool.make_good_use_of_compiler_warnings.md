@@ -24,7 +24,7 @@ Low
 
 All types of projects.
 
-Existing projects: Review the project settings - make sure they are on.
+Existing projects: Review the project settings - make sure warnings are enabled.
 
 ## Caveats
 
