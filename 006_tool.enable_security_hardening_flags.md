@@ -14,7 +14,7 @@ C and C++
 
 ## Platform
 
-All, but the number and quality of mitigations offered will differ.
+All, but the number and quality of mitigations offered will differ between toolchains, OS versions and CPU architectures.
 
 ## Implementation effort
 
@@ -27,29 +27,37 @@ All software which deals with untrusty third party inputs.
 ## Caveats
 
 * Try to enable these flags early on as there might be side effects which are easier to track down outside of a release window...
-* Mitigation's make it harder (sometimes a lot) to exploit a given bug, but they are no 100% protection. Also make sure that OS-level mitigations are also enabled.
+* Mitigations make it harder (sometimes a lot) to exploit a given bug, but they are no 100% protection. Also make sure that OS-level mitigations are also enabled.
+* Some mitigation have a performance impact.
 
 ## See also
+
+\-
 
 ## Implementation hints
 
 GCC/Clang:
 
 ```
-    -D_FORTIFY_SOURCE=1 (compile-time checks)
+    -D_FORTIFY_SOURCE=2
 
-    -D_FORTIFY_SOURCE=2 -O1 (compile- and run-time checks but might fail on correct code; -O1 or higher strongly advised)
+    -Wl,-z,relro,-z,now
 
     -fstack-protector-strong
+
+    -pie -fPIE
 
     -Wformat­ -Wformat­-security
 
 ```
 
-Visual Studio: FIXME
+Visual Studio:
 
 ```
-    ?? /RTC? /GS?, Control Flow Guard?
+    /GS
+    /guard:cf
 ```
 
-For Embedded-Linux scenarios it might be better to globally enable these flags at an image level.
+These options only provide a baseline, please have a look at the toolchain documentation for details and more mitigations.
+
+For Embedded-Linux scenarios it might be better to globally enable these flags globally during firmware generation.
