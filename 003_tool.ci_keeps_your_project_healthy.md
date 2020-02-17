@@ -2,7 +2,7 @@
 
 ## Goals
 
-Ensure that the code base stays healthy. Make sure it compiles (for all relevant configurations) and checks are run in a consistent way.
+Ensure that your code base stays healthy. Make sure it compiles (for all relevant configurations) and checks are run in a consistent way.
 
 ## Description
 
@@ -28,7 +28,7 @@ A must-have if there is more then one developer involved with the project.
 
 ## See also
 
-* [Proper automated builds](https://toolbox.basyskom.com/FIXME_have_we_lost_this_card?)
+* [Proper automated builds](https://toolbox.basyskom.com/9)
 
 ## Implementation hints
 
