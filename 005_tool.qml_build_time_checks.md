@@ -38,4 +38,6 @@ qmllint has been added with Qt5.4. The Qt Quick compiler has been available in u
 
 Ideally these tools are run as part of the build process.
 
-Given that you are already using QRCs for your QML documents you can just add `CONFIG+=qtquickcompiler` to your project. For details and CMake see:  https://doc.qt.io/qt-5/qtquick-deployment.html#ahead-of-time-compilation
+Given that you are already using QRCs for your QML documents you can just add `CONFIG+=qtquickcompiler` to your project.
+
+For CMake and more details see:  https://doc.qt.io/qt-5/qtquick-deployment.html#ahead-of-time-compilation
