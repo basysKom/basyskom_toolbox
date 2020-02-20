@@ -12,7 +12,7 @@ There are some DO and DONTS that help to avoid this scenario.
 
 ## Environment
 
-C++/Qt
+C++, Javascript, QML and Qt
 
 ## Platform
 
