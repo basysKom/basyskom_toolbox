@@ -16,7 +16,7 @@ Qt/QML
 
 ## Platform
 
-All Platforms supported by Qt Quick 2 and OpenGL (ES) 2.0
+All
 
 ## Implementation effort
 
