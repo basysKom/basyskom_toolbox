@@ -2,7 +2,7 @@
 
 ## Goals
 
-Ensure that a working task is undestood by your team
+Ensure that a working task is understood by your team
 
 ## Description
 
@@ -12,20 +12,20 @@ A Definition Of Ready contains all requirements that a product owner (who writes
 
 **A Definition of Ready describes when a Story is Ready for a sprint.**
 
-Ususally a defintion of ready answers the why, the what and finally the how.
+Usually a definition of ready answers the why, the what and finally the how.
 
- - Is the goal of the story clear enough?
- - Is the value for the project clear?
- - Is the expected result undestood?
- - Are the acceptance criteria for the story clear?
+- Is the goal of the story clear enough?
+- Is the value for the project clear?
+- Is the expected result understood?
+- Are the acceptance criteria for the story clear?
 
 Once the product owner has written a story that can answer those questions, the team can answer these:
 
- - Is the story small enough the get done in one sprint?
- - The team knows how the story can be implemented!
- - The story is estimated!
- 
- In other words, a *Definition of Ready* describes what need to be fullfiled by a story so that this story is **Clear**, **Testable**, **Implementable**.
+- Is the story small enough the get done in one sprint?
+- The team knows how the story can be implemented!
+- The story is estimated!
+
+ In other words, a *Definition of Ready* describes what need to be fulfilled by a story so that this story is **Clear**, **Testable**, **Implementable**.
 
 ## Environment
 
@@ -40,8 +40,8 @@ All
 Small
 
 ## Applicability
-Every Project, no matter if agile or not, if running or not
 
+Every Project, no matter if agile or not, if running or not
 
 ## Caveats
 
