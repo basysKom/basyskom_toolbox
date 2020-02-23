@@ -6,7 +6,7 @@ Write future-proof QML code that is modular, efficient and maintainable.
 
 ## Description
 
-QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsability!
+QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsibility!
 Like with other languages there are pitfalls that might increase the implementation effort, degrade performance or reduce maintainability and code quality.
 There are some DO and DONTS that help to avoid them.
 
@@ -33,7 +33,7 @@ All projects using C++ and QML Qt.
 * Some C++ classes or QML elements are provided for migrational purposes and therefore deliver mediocre performance:
   * C++: QGraphicsProxyWidget, QQuickWidget, QQuickPaintedItem
   * QML: QML Canvas
-* Try to avoid them 
+* Try to avoid them
 
 ## See also
 
@@ -43,9 +43,9 @@ All projects using C++ and QML Qt.
 
 There are several rules of thumb that can improve the overall architecture and maintenance:
 
-* An element should always be selfcontained:
+* An element should always be self contained:
   * It should never reference ids that are not instantiated by itself (e.g. root.parent)
-  * It should define an API of properties and functions to set dependancies from the outside and access its data
+  * It should define an API of properties and functions to set dependencies from the outside and access its data
   * Keep the API as small as possible and as large as necessary
   * This allows for modular re-use and easy unit-testing
 * Use context properties sparingly
@@ -62,7 +62,7 @@ There are several rules of thumb that can improve the overall architecture and m
   * Avoid complex expressions
   * Enforce encapsulation of UI and business logic
 * Create a component framework to create reusable elements
-  * Define basic elements with basic behavior. Keep them selfcontained and encapsulated
+  * Define basic elements with basic behavior. Keep them self contained and encapsulated
   * Nest and use the basic elements inside more complex elements according to their role
   * This allows for easier code extensions or gradual refactoring.
 * Use the Style Singleton approach for [QML Styling](https://wiki.qt.io/Qml_Styling)
