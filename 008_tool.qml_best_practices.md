@@ -54,7 +54,6 @@ There are several rules of thumb that can improve the overall architecture and m
   * Always giving the local root element an id and access its properties via this id avoids unintended cross-element references
   * This eases refactoring and maintainability
 * Stick to declarative coding and keep imperative JavaScript snippets minimal.
-  * JavaScript functions and expressions needs to start a JavaScript engine and will take time
   * This is OK for prototyping, but should be avoided in production code
   * Avoid using JavaScript in hot spots, prefer C++ functions.
 * Keep the UI simple
