@@ -15,15 +15,19 @@ A sprint can be split into three steps:
 - **Check (and Act)**, at the end of a sprint the team presents the results to the product owner. There are two parts to this step, while part one is the product presentations, part two is the internal retrospective as part of the own continues improvement process.
 
 ## Environment
+
 \-
 
 ## Platform
+
 All projects
 
 ## Implementation effort
+
 Scrum requires time, estimate at least 6 team hours a week.
 
 ## Applicability
+
 New Projects
 
 ## Caveats

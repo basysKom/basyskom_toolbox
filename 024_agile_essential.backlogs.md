@@ -2,27 +2,24 @@
 
 ## Goals
 
-Organize your work to be done in a scructured way.
+Organize your work to be done in a structured way.
 
 ## Description
 
-The backlog is a scructured approach to list everything that is relevant for your project/product. It is the source of all requirements. It represents the dynamic and agile plan of your project.
-It contains everything that is required to develop your product, but it is still open and changable. 
+The backlog is a structured approach to list everything that is relevant for your project/product. It is the source of all requirements. It represents the dynamic and agile plan of your project.
+It contains everything that is required to develop your product, but it is still open and changeable.
 
-A backlog entry is called a story. In order to stay open and changeable ensure your backlog is short and future stories are not too detailed right from the start. Only stories that are relevant for the next sprints should be ready to get estimated. 
+A backlog entry is called a story. In order to stay open and changeable ensure your backlog is short and future stories are not too detailed right from the start. Only stories that are relevant for the next sprints should be ready to get estimated.
 
-A backlog is prioritized. The most detailed and important stories are on the top of your backlog. This way the product owner ensures that the stories with the highest value for the product are done first and you can achive an early ROI.
-
+A backlog is prioritized. The most detailed and important stories are on the top of your backlog. This way the product owner ensures that the stories with the highest value for the product are done first and you can achieve an early ROI.
 
 ## Environment
 
 SCRUM and Kanban Projects
 
-
 ## Platform
 
 Agile Projects
-
 
 ## Implementation effort
 
