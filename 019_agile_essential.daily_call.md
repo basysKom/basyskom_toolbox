@@ -16,6 +16,7 @@ Everyone will only answer three questions.
 - What are you going to do today?
 - Do you have any immediate issues?
 
+In complex situations you can change the way of asking. First everyone answers what has been done yesterday, then the team can plan together what needs to be done today.
 
 ## Environment
 
