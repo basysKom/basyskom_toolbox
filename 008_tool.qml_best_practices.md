@@ -6,8 +6,9 @@ Write future-proof QML code that is modular, efficient and maintainable.
 
 ## Description
 
-QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsability!
+QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsibility!
 Like with other languages there are pitfalls that might increase the implementation effort, degrade performance or reduce maintainability and code quality.
+
 There are some DO and DONTS that help to avoid them.
 
 ## Environment
@@ -30,10 +31,7 @@ All projects using C++ and QML Qt.
 
 ## Caveats
 
-* Some C++ classes or QML elements are provided for migrational purposes and therefore deliver mediocre performance:
-  * C++: QGraphicsProxyWidget, QQuickWidget, QQuickPaintedItem
-  * QML: QML Canvas
-* Try to avoid them 
+\-
 
 ## See also
 
@@ -43,9 +41,9 @@ All projects using C++ and QML Qt.
 
 There are several rules of thumb that can improve the overall architecture and maintenance:
 
-* An element should always be selfcontained:
+* An element should always be self contained:
   * It should never reference ids that are not instantiated by itself (e.g. root.parent)
-  * It should define an API of properties and functions to set dependancies from the outside and access its data
+  * It should define an API of properties and functions to set dependencies from the outside and access its data
   * Keep the API as small as possible and as large as necessary
   * This allows for modular re-use and easy unit-testing
 * Use context properties sparingly
@@ -54,7 +52,6 @@ There are several rules of thumb that can improve the overall architecture and m
   * Always giving the local root element an id and access its properties via this id avoids unintended cross-element references
   * This eases refactoring and maintainability
 * Stick to declarative coding and keep imperative JavaScript snippets minimal.
-  * JavaScript functions and expressions needs to start a JavaScript engine and will take time
   * This is OK for prototyping, but should be avoided in production code
   * Avoid using JavaScript in hot spots, prefer C++ functions.
 * Keep the UI simple
@@ -62,11 +59,11 @@ There are several rules of thumb that can improve the overall architecture and m
   * Avoid complex expressions
   * Enforce encapsulation of UI and business logic
 * Create a component framework to create reusable elements
-  * Define basic elements with basic behavior. Keep them selfcontained and encapsulated
+  * Define basic elements with basic behavior. Keep them self contained and encapsulated
   * Nest and use the basic elements inside more complex elements according to their role
   * This allows for easier code extensions or gradual refactoring.
 * Use the Style Singleton approach for [QML Styling](https://wiki.qt.io/Qml_Styling)
-  * Avoid creating unecessary clones of identical objects
+  * Avoid creating necessary clones of identical objects
 * Stick to [QML Coding Guidelines](https://doc.qt.io/qt-5/qml-codingconventions.html)
   * This makes it easy to maintain QML code and read QML code written by others
 * Use the Loader element to load bigger parts of the application on demand. [QML Loader](https://doc.qt.io/qt-5/qml-qtquick-loader.html)
@@ -74,6 +71,4 @@ There are several rules of thumb that can improve the overall architecture and m
   * Once again: As small as possible and as large as necessary
   * Do not expose QObjects without a parent to QML, as the JavaScript garbage collector might clean them up
 * Keep the C++ implementation agnostic of the internal QML object tree composition and vice versa
-* The environment variable QSG_VISUALIZE can be helpful to identify performance issues. [Scene Graph Optimizations](https://doc.qt.io/qt-5/qtquick-visualcanvas-scenegraph-renderer.html)
 * Use Qt Creator for QML Profiler integration. [QML Profiler](https://doc.qt.io/qtcreator/creator-qml-performance-monitor.html)
-* Don't mix Qt/QML patterns with alien patterns (e.g. foreign MVC patterns)
