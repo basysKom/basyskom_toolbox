@@ -8,6 +8,7 @@ Write future-proof QML code that is modular, efficient and maintainable.
 
 QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsibility!
 Like with other languages there are pitfalls that might increase the implementation effort, degrade performance or reduce maintainability and code quality.
+
 There are some DO and DONTS that help to avoid them.
 
 ## Environment
@@ -30,10 +31,7 @@ All projects using C++ and QML Qt.
 
 ## Caveats
 
-* Some C++ classes or QML elements are provided for migrational purposes and therefore deliver mediocre performance:
-  * C++: QGraphicsProxyWidget, QQuickWidget, QQuickPaintedItem
-  * QML: QML Canvas
-* Try to avoid them
+\-
 
 ## See also
 
@@ -66,7 +64,7 @@ There are several rules of thumb that can improve the overall architecture and m
   * Nest and use the basic elements inside more complex elements according to their role
   * This allows for easier code extensions or gradual refactoring.
 * Use the Style Singleton approach for [QML Styling](https://wiki.qt.io/Qml_Styling)
-  * Avoid creating unecessary clones of identical objects
+  * Avoid creating necessary clones of identical objects
 * Stick to [QML Coding Guidelines](https://doc.qt.io/qt-5/qml-codingconventions.html)
   * This makes it easy to maintain QML code and read QML code written by others
 * Use the Loader element to load bigger parts of the application on demand. [QML Loader](https://doc.qt.io/qt-5/qml-qtquick-loader.html)
@@ -74,6 +72,4 @@ There are several rules of thumb that can improve the overall architecture and m
   * Once again: As small as possible and as large as necessary
   * Do not expose QObjects without a parent to QML, as the JavaScript garbage collector might clean them up
 * Keep the C++ implementation agnostic of the internal QML object tree composition and vice versa
-* The environment variable QSG_VISUALIZE can be helpful to identify performance issues. [Scene Graph Optimizations](https://doc.qt.io/qt-5/qtquick-visualcanvas-scenegraph-renderer.html)
 * Use Qt Creator for QML Profiler integration. [QML Profiler](https://doc.qt.io/qtcreator/creator-qml-performance-monitor.html)
-* Don't mix Qt/QML patterns with alien patterns (e.g. foreign MVC patterns)
