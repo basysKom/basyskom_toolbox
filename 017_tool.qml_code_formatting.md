@@ -28,11 +28,11 @@ Applicable to code that has just been written by yourself. Don't blindly reforma
 
 TODO: Maybe we will change the content to use the `qmlformat`-tool
 
-Tools > QML/JS > Reformat file doesn't allow to reformat only selected text
+`Tools > QML/JS > Reformat` file doesn't allow to reformat only selected text
 
 ## See also
 
-[QML coding conventions](TODO://ADD.URL)
+[QML coding conventions](https://toolbox.basyskom.com/16)
 
 ## Implementation hints
 

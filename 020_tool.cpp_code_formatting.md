@@ -32,7 +32,11 @@ Consider putting the custom clang-format file under version control so developer
 
 ## Caveats
 
+\-
+
 ## See also
+
+\-
 
 ## Implementation hints
 

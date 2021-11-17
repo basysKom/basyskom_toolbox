@@ -52,8 +52,9 @@ CMake (CMakeLists.txt):
 
 Disables automatic conversion from `iterator` to `const_iterator`.
 
-Here is some code that only wants to read from a container.
-```
+Here is some code that only wants to read from a container:
+
+```cpp
 QString str = ...;
 for (QString::const_iterator iter = str.begin(), end = str.end(); iter != end; ++iter) // detaches
 ```
@@ -61,18 +62,21 @@ for (QString::const_iterator iter = str.begin(), end = str.end(); iter != end; +
 While iter is of type `QString::const_iterator`, `str.begin()` returns its mutable sibling `QString::iterator`. `iter` is thus converted to the returned type and `str` detaches (creates a copy of the container). To avoid these unnecessary copies, let the compiler bail out on implicit conversions from non-const to const iterators.
 
 Above code can be written correctly as:
-```
+
+```cpp
 QString str = ...;
 for (QString::const_iterator iter = str.constBegin(), end = str.constEnd(); iter != end; ++iter) // doesn't detach
 ```
+
 Now `str.constBegin()` is used which returns a `QString::const_iterator` and no conversion takes place.
 
-
 #### QT_NO_CAST_FROM_ASCII (performance++)
+
 Disables automatic conversions from 8-bit strings `(`char *`)` to unicode QStrings.
 
 In many cases you would use string literals in your code:
-```
+
+```cpp
 QApplication::setApplicationName("Embedded World Demo - QML Client"); // API: void setApplicationName(const QString &)
 ```
 
@@ -80,13 +84,13 @@ In this case, the string literal (UTF-8) will be converted to a `QString` (UTF-1
 
 So to avoid these steps, there is the `QStringLiteral` macro. It creates the `QStringData` object at compile time (there are cases where it is not, but let's not burden our brains with too borderly cases. For all the gory details, see https://woboq.com/blog/qstringliteral.html) so at runtime the created `QString` only has to point to that location.
 
-```
+```cpp
 QApplication::setApplicationName(QStringLiteral("Embedded World Demo - QML Client")); // copying and conversion at compile time
 ```
 
-However, not everyone needs UTF-8/16 strings to do their work. Many methods have QLatin1String overloads, which is just a thin wrapper around `char *`. If so, use it instead of the QString one.
+However, not everyone needs UTF-8/16 strings to do their work. Many methods have `QLatin1String` overloads, which is just a thin wrapper around `char *`. If so, use it instead of the `QString` one.
 
-```
+```cpp
 if (hostAddressString.contains(QLatin1String("192.168.")))
 ```
 
@@ -115,19 +119,17 @@ In any code that uses `QUrl`, it can help avoid missing `QUrl::resolved()` calls
 
 #### QT_USE_QSTRINGBUILDER (performance++)
 
-
 The '+' concatenator for `QString` and friends will automatically be performed as the more efficient `QStringBuilder` '%' everywhere.
 
-
 This define deprecates `QT_USE_FAST_CONCATENATION` and `QT_USE_FAST_OPERATOR_PLUS`.
-
 
 #### QT_NO_NARROWING_CONVERSIONS_IN_CONNECT (correctness++)
 
 Disables calling a slot with e.g. int parameter with a signal with double parameter.
 
 The new-style, pointer to member function-based connect will check at compile time if the signal’s signature is compatible with the slot’s one. Thus you cannot connect a signal with a `QString` parameter to a slot with an int parameter. There is no implicit conversion between those two. There is however between `double` and `int`.
-```
+
+```cpp
 connect(s, &Sender::signalWithDouble,
         r, &Receiver::slotWithInt);    // compiles fine and at run time cuts off the decimal part of the double value (narrowing conversion)
 ```

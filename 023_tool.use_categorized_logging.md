@@ -2,11 +2,11 @@
 
 ## Goals
 
-Flexible, unified logging for both C++ and QML
+Flexible, unified logging for both C++ and QML.
 
 ## Description
 
-Logging with qDebug/qWarning/qCritical isn't flexibel enough. Most of the time a developer wants to get logs only from an area in the code that's causing a problem.
+Logging with `qDebug`/`qWarning`/`qCritical` isn't flexibel enough. Most of the time a developer wants to get logs only from an area in the code that's causing a problem.
 
 Setting up categorized logging in a way that logs are generated on a class/functionality/module level will allow to filter for specific messages, which makes finding issues or even understanding the application data flow or structure much easier, especially for large code bases.
 
@@ -20,7 +20,7 @@ C++/QML (Qt >= 5.2, Qt >= 5.8 for QML); `QT_LOGGING_RULES` since 5.3)
 
 ## Implementation effort
 
-Minimal to Medium depending on how the categories are structured
+Minimal to medium depending on how the categories are structured.
 
 ## Applicability
 

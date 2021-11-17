@@ -30,7 +30,7 @@ Make sure to respect existing in-house conventions of customers. Do not blindly 
 
 ## See also
 
-[QML code formatting](TODO://ADD.URL)
+[QML code formatting](https://toolbox.basyskom.com/17)
 
 ## Implementation hints
 
