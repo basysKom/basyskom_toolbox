@@ -1,4 +1,4 @@
-# Tool Make use of exploit mitigations
+# Make use of exploit mitigations
 
 ## Goals
 
