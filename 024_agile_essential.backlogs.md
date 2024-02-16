@@ -15,11 +15,11 @@ A backlog is prioritized. The most detailed and important stories are on the top
 
 ## Environment
 
-SCRUM and Kanban Projects
+SCRUM and Kanban projects
 
 ## Platform
 
-Agile Projects
+Agile projects
 
 ## Implementation effort
 
@@ -31,7 +31,7 @@ New projects
 
 ## Caveats
 
-The biggest mistake a product owner can make is to write to detailed stories. It is very important that a story not only stays in a backlog because *it was so much work to write it*.
+The biggest mistake a product owner can make is to write too detailed stories. It is very important that a story not only stays in the backlog because *it was so much work to write it*.
 
 ## See also
 

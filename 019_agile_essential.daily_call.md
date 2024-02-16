@@ -20,7 +20,7 @@ In complex situations you can change the way of asking. First everyone answers w
 
 ## Environment
 
-All Projects
+All projects
 
 ## Platform
 
@@ -32,7 +32,7 @@ Rougly 15 Team-Minutes per day
 
 ## Applicability
 
-All Projects.
+All projects.
 
 ## Caveats
 
