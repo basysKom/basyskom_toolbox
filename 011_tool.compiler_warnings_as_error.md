@@ -6,7 +6,7 @@ Prevent problematic code from silently "creeping" in.
 
 ## Description
 
-Modern C and C++ compilers are quite good at generating warnings for problematic issues. By default a warning will not stop the compiler from generating code. Consider to treat compiler warnings as errors to prevent issues from creeping into your code base.
+Modern C and C++ compilers are quite good at generating warnings for problematic issues. By default, a warning will not stop the compiler from generating code. Consider to treat compiler warnings as errors to prevent issues from creeping into your code base.
 
 ## Environment
 
@@ -27,7 +27,7 @@ All projects with a clearly defined target toolchain.
 ## Caveats
 
 * Treating warnings as errors can be a considerable headache if there is a large range of toolchains/platforms to support as warnings generated might change over time.
-* Do not enable "warning as errors" for releases that are consumed by an undefined and wide-ranging user base (for example when releasing software with-in your organization, to customers or as open source).
+* Do not enable "warning as errors" for releases that are consumed by an undefined and wide-ranging user base (for example when releasing software within your organization, to customers or as open source).
 
 ## See also
 
