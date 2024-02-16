@@ -1,4 +1,4 @@
-# Enable build time checks for your QML files
+# Enable build-time checks for your QML files
 
 ## Goals
 
