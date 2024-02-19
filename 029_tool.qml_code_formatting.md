@@ -26,6 +26,8 @@ Applicable to code that has just been written by yourself. Don't blindly reforma
 
 ## See also
 
+- [C/C++ code formatting](https://toobox.basyskom.com/26)
+
 ## Implementation hints
 At project start decide which code formatting to use. We ask the customer if there are in-house styles which should be implemented. If the customer doesn't care, we will use the official Qt QML code style.
 
