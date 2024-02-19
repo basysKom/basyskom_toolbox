@@ -1,13 +1,13 @@
-# Tool UI asset handling
+# UI asset handling
 
 ## Goals
 Have assets delivered that are high quality and easy to use
 
 ## Description
-High quality assets are easy to work with, which prevents unnecessary work on the development side (making the project cheaper). Provide assets in an appropriate format and size, allow for direct communication between developers and designers to simplify the workflow and speed up the development process in an interdisciplinary team. 
+High quality assets are easy to work with, which prevents unnecessary work on the development side (making the project cheaper). Provide assets in an appropriate format and size, allow for direct communication between developers and designers to simplify the workflow and speed up the development process in an interdisciplinary team.
 
 ## Environment
-Qt/QML
+All
 
 ## Platform
 All
