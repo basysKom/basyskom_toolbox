@@ -1,4 +1,4 @@
-# Tool Apply C/C++ code formatting
+# Apply C/C++ code formatting
 
 ## Goals
 Keep code readable by applying consistent code styles
