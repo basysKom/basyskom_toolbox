@@ -1,11 +1,11 @@
 # Resolution indepedent QML
 
 ## Goals
-Creating UI code, that can run on various display sizes with different resolutions
+Creating UI code that can run on various display sizes with different resolutions
 
 ## Description
 When creating a QtQuick application it is probable that its target device and its display will be completely different from the development machine.
-As a result, it is important to create the UI code in a way, that it is able to scale well across different display hardware.
+As a result, it is important to create the UI code in a way, that the UI is able to scale well across different display hardware.
 
 ## Environment
 QML
@@ -36,12 +36,12 @@ Implementation is dependent on what kind of devices the application needs to run
 
 General advice:
 
-- Although generally inadvisable: if the UI code contains item placement with absolute coordinates and fixed widths and heights, the application can be scaled to other display resolutions by using the environment variables `QT_AUTO_SCREEN_SCALE_FACTOR` and `QT_SCALE_FACTOR`
-implement the UI using anchor based layouts and by placing elements with Positioner items like Row, Column, Grid, RowLayout, ColumnLayout, etc.
-- consider implementing the UI using file selectors: this allows to switch the actual UI code based on specific selectors. As an example: the screen layout for the application running on a smartwatch might be completely different from an application running on a desktop PC
+- implement the UI using anchor based layouts and by placing elements with positioner items like Row, Column, Grid, RowLayout, ColumnLayout, etc.
+- consider implementing the UI using file selectors: this allows to switch the actual UI code based on specific selectors. As an example: the screen layout for the application running on a smartwatch might (or probably should) be completely different from an application running on a desktop PC
 - it can be very beneficial to do element sizing and placement in QML by using some kind of unit format instead of pixels.
+- Although generally inadvisable: if the UI code contains item placement with absolute coordinates and fixed widths and heights, the application can be scaled to other display resolutions by using the environment variables `QT_AUTO_SCREEN_SCALE_FACTOR` and `QT_SCALE_FACTOR`
 
-See:
+For further information take a look into the Qt articles regarding the topic:
 
-- https://doc.qt.io/qt-5/highdpi.html
-- https://doc.qt.io/qt-5/scalability.html
+- https://doc.qt.io/qt-6/scalability.html
+- https://doc.qt.io/qt-6/highdpi.html
