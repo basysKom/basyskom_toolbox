@@ -1,4 +1,4 @@
-# Tool QML code formatting
+# QML code formatting
 
 ## Goals
 Keep code readable/consistent
