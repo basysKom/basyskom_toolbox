@@ -1,4 +1,4 @@
-# Tool i18n: Make your software international
+# i18n: Make your software international
 
 ## Goals
 Have translations delivered that are easy to integrate into the system to make your system speak the language of your customers. Build software that adapts to the country, language and timezone of the customers, without changing the code.
