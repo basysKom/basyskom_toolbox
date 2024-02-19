@@ -1,4 +1,4 @@
-# Tool Use QAbstractItemModelTester for Custom Models
+# Use QAbstractItemModelTester for Custom Models
 
 ## Goals
 Detect/Avoid a certain set of errors in subclasses of QAbstractItemModel.
