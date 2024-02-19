@@ -35,6 +35,8 @@ Decide which translation function to use, depending on the use case and project 
 - by text id → `qsTrId()` (QML)
 - by text and context → `qsTranslate()` (QML) / `QCoreApplication::translate()` (C++)
 
+Refer to the "[Writing Source Code for Translation](https://doc.qt.io/qt-5/i18n-source-translation.html)" documentation for more advanced hints on how to write code for better translations.
+
 Update translation files using `lupdate`, either via command line or directly from QtCreator: `Tools > External > Linguist > Update Translations` to update translation files (.ts) in your repository. These should be tracked by the version control system.
 
 Use [Qt Linguist](https://doc.qt.io/qt-5/qtlinguist-index.html) to provide translations for the user strings of your application.
