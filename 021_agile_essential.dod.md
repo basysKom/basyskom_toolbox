@@ -28,7 +28,7 @@ Agile Projects
 
 ## Caveats
 
-It can be hard to keep the Definition of Done in the minds of the team (esp. if the DoD is to generic and does not fit to the current state of development). It is upon the product owner to insist upon the compliance towards the DoD.
+It can be hard to keep the Definition of Done in the minds of the team (esp. if the DoD is to generic and does not fit to the current state of development). It is upon the Product Owner to insist upon the compliance towards the DoD.
 
 ## See also
 

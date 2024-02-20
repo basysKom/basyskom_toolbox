@@ -6,7 +6,7 @@ Avoid deprecated Qt
 
 ## Description
 
-A defining quality of Qt is that it provides long-term API stability within a major release (e.g. Qt 5) which historically translates to roughly 7-8 years. To communicate up-front which APIs (or parts of an API) might be affected by a change in the next major release, deprecation warnings are added to the headers of Qt as a continuous process. 
+A defining quality of Qt is that it provides long-term API stability within a major release (e.g. Qt 5), which historically translates to roughly 7-8 years. To communicate up-front which APIs (or parts of an API) might be affected by a change in the next major release, deprecation warnings are added to the headers of Qt as a continuous process.
 
 Make sure to enable deprecation warnings to stay up-to-date how your application might be affected by Qt API changes and to ease the transition to new Qt versions over time.
 

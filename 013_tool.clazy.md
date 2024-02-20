@@ -16,11 +16,11 @@ C++/Qt
 
 ## Platform
 
-Either QtCreator >= 4.6, standalone or upstream clang (note that xcode-clang and android-clang are not supported)
+Either Qt Creator >= 4.6, standalone or upstream clang (note that xcode-clang and android-clang are not supported)
 
 ## Implementation effort
 
-Very minimal (QtCreator), small when already using upstream clang, potentially high if a project needs to be ported to upstream llvm/clang first.
+Very minimal (Qt Creator), small when already using upstream clang, potentially high if a project needs to be ported to upstream llvm/clang first.
 
 ## Applicability
 
@@ -36,4 +36,4 @@ All projects using C++ Qt.
 
 ## Implementation hints
 
-Usage via QtCreator is probably the easiest way to get started. Integration into a CI system is probably best done via the standalone version of clazy in combination with a compilation database.
+Usage via Qt Creator is probably the easiest way to get started. Integration into a CI system is probably best done via the standalone version of clazy in combination with a compilation database.
