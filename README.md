@@ -55,9 +55,3 @@ You can create tags in the readme of your projects to list tools or principles y
 | Agile Essential: Storypoints                   | [![Storypoints](https://img.shields.io/badge/Storypoints-gray?link=https%3A%2F%2Ftoolbox.basykom.com%2F23)](https://toolbox.basyskom.com/23) |
 | Agile Essential: Backlogs                      | [![Backlogs](https://img.shields.io/badge/Backlogs-gray?link=https%3A%2F%2Ftoolbox.basykom.com%2F24)](https://toolbox.basyskom.com/24) |
 | Agile Essential: Sprint                        | [![Sprint](https://img.shields.io/badge/Sprint-gray?link=https%3A%2F%2Ftoolbox.basykom.com%2F25)](https://toolbox.basyskom.com/25) |
-
-
-
-
-
-
