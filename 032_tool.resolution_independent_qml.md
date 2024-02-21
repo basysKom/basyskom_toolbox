@@ -30,9 +30,11 @@ Always
 ## Implementation hints
 Implementation is dependent on what kind of devices the application needs to run on. Some of the following questions can be used as guidance:
 
-- which types of devices need to be supported (example: smartwatch, mobile device, embedded device, desktop hardware, tv)
+- which types of devices need to be supported (example: smartwatch, mobile device, embedded device, desktop hardware, TV)
 - which resolutions need to be supported
 - which aspect ratios need to be supported
+- will the application run in full screen or windowed mode?
+- will the application run in portrait or landscape mode and can you switch between them during runtime?
 
 General advice:
 
@@ -45,3 +47,4 @@ For further information take a look into the Qt articles regarding the topic:
 
 - https://doc.qt.io/qt-6/scalability.html
 - https://doc.qt.io/qt-6/highdpi.html
+- https://www.qt.io/blog/responsive-layouts-in-qt
