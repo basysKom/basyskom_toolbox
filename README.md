@@ -20,13 +20,13 @@ An important piece of information for a given tool is the **applicability**. A p
 
 
 ## Usage on Github
-You can create tags in the readme of your projects to list tools or principles you used during develepment like this:
+You can create badges in the readme of your projects to list tools or principles you used during develepment like this:
 
 [![Story](https://img.shields.io/badge/Story-gray?link=https%3A%2F%2Ftoolbox.basykom.com%2F20)](https://toolbox.basyskom.com/20)
 [![Benefit From Peer Reviews](https://img.shields.io/badge/Benefit%20From%20Peer%20Reviews-orange?link=https%3A%2F%2Ftoolbox.basykom.com%2F14)](https://toolbox.basyskom.com/14) 
 
 
-### List of Tags
+### List of Badges
 
 | Title                                          | Badge |
 |------------------------------------------------|-------|
