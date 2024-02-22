@@ -7,7 +7,7 @@ Improve your organization
 ## Description
 
 A continuous improvement process can be implemented by introducing a bi-weekly retrospective. This meeting requires moderation to stay blameless, open and focused on improvements. The retrospective enables the team to reflect its teamwork in order to improve its way of working. You place this meeting after the sprint review and before the next sprint planning. 
-The timeframe of a retrospective is usually the last sprint. Indentified topics can be taken as actions into the next sprint, i.e. by adjusting the definition of done (or ready) or adding topics to the sprint backlog. 
+The timeframe of a retrospective is usually the last sprint. Indentified topics can be taken as actions into the next sprint, i.e. by adjusting the Definition of Done/Ready or adding topics to the sprint backlog.
 
 There are serveral techniques and concepts that can be applied to moderate such a meeting. 
 One good point to get ideas and methods for a retrospective is the website [Retromat](https://retromat.org/)

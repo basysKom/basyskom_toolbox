@@ -6,7 +6,7 @@ Describe default requirements for all your stories. Avoid technical dept.
 
 ## Description
 
-General acceptance criteria define your Definition of Done (DoD). Usually, a DoD contain non functional requirements which need to be fulfilled by every story as well as testable requirements and limitations. The DoD is an agile document that requires regular adjustments and reviews.
+General acceptance criteria define your Definition of Done (DoD). Usually, a DoD contains non functional requirements which need to be fulfilled by every story as well as testable requirements and limitations. The DoD is an agile document that requires regular adjustments and reviews.
 
 A good DoD describes the depth of documentation, test coverage and performance expectations.
 
