@@ -20,12 +20,8 @@ Applicable to code that has just been written by yourself. Reformatting code wit
 
 Generally, "format-on-save" should only be turned on if all members of project adhere to coding style. Code style adaptions (e.g. in an existing code base) should ONLY be done on a commit-basis, "format-on-save" should not be used in these cases. If you want to adapt the code base or single files to a new or changed format use style-change-only-commits without changing any logic. This will make tracking changes in your version control system easier.
 
-Additional considerations: 
-- Put a (custom) clang-format file into your repository, so developers are using the same configuration. 
-- Adapt your CI-checks to involve a formatting check in order to catch formatting errors automatically.
-
 ## Caveats
-Formatting tools are do not always format code as you would like. Especially line breaks are common issues. You might use `// clang-format off` and `// clang-format on` comments around a line or section to disable clang-format sporadically to manually format the code.
+Formatting tools do not always format code as you would like. Especially line breaks are common issues. You might use `// clang-format off` and `// clang-format on` comments around a line or section to disable clang-format sporadically to manually format the code.
 
 ## See also
 
@@ -33,9 +29,13 @@ Formatting tools are do not always format code as you would like. Especially lin
 - [Continuous Integration keeps your project healthy](https://toolbox.basyskom.com/3)
 
 ## Implementation hints
-At project start decide which coding style to use. Ask the customer if there are in-house styles which should be implemented. If the customer doesn't care we will use the official [Qt C++ code style](https://wiki.qt.io/Qt_Coding_Style).
+At project start, decide which coding style to use. Ask the customer if there are in-house styles which should be implemented. If the customer doesn't care we will use the official [Qt C++ code style](https://wiki.qt.io/Qt_Coding_Style).
 
-Use IDE to apply coding styles while writing (in QtCreator: `Options > C++ > Code Style`).
+It is good practice to put a (custom) .clang-format file into your repository, so developers are using the same configuration. 
+
+You may want to adapt your CI-checks to involve a formatting check in order to catch formatting errors automatically.
+
+Use your IDE to apply coding styles while writing (in QtCreator: `Options > C++ > Code Style`). When using clang-format, developers should choose the same version, to avoid conflicting formatting, caused by a different program version.
 
 Use IDE to 'convert' whole files
 
