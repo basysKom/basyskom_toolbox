@@ -6,7 +6,9 @@ Write good Qt code. Avoid the use of problematic Qt APIs.
 
 ## Description
 
-While Qt prides itself on APIs that are consistent and simple to use - there are pitfalls. Parts of an API might turn out to be dangerous in practice or they may yield sub-optimal performance. clazy is a static code analysis tool built on to off the llvm/clang compiler infrastructure. It will issues warnings for Qt specific issues. See https://github.com/KDE/clazy for details and a list of the kind of warnings reported by clazy.
+While Qt prides itself on APIs that are consistent and simple to use - there are pitfalls. Parts of an API might turn out to be dangerous in practice or they may yield suboptimal performance. Clazy is a static code analysis tool built on to of the llvm/clang compiler infrastructure. It issues warnings for Qt specific issues. 
+
+See https://github.com/KDE/clazy for details and a list of the kind of warnings reported by clazy.
 
 ## Environment
 
@@ -14,7 +16,7 @@ C++/Qt
 
 ## Platform
 
-Either QtCreator >= 4.6, standalone or upstream clang (note that xcode-clang and android-clang do not work)
+Either Qt Creator >= 4.6, standalone or upstream clang (note that xcode-clang and android-clang are not supported)
 
 ## Implementation effort
 

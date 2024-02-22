@@ -6,7 +6,7 @@ Let the compiler warn you about problems
 
 ## Description
 
-Modern C and C++ compilers help you to catch problems early on by emitting warnings at compile time. Make sure warnings are enabled for your project. Often there are temptations to disable them ("we have so many of them", ...). Warnings are not binary, in addition to the different warning levels, individual warnings can be specifically enabled or concisely suppressed. Don't throw out the baby with the bath water – make sure to properly configure warnings.
+Modern C and C++ compilers help you to catch problems early on by emitting warnings at compile time. Make sure warnings are enabled for your project. Often there are temptations to disable them ("we have so many of them", ...). Warnings are not either on or off, personalize them to your needs: In addition to the different warning levels, individual warnings can be specifically enabled or concisely suppressed. Don't throw out the baby with the bath water – make sure to properly configure warnings.
 
 ## Environment
 
@@ -28,7 +28,7 @@ Existing projects: Review the project settings - make sure warnings are enabled.
 
 ## Caveats
 
-Existing projects where warnings had been disabled for a long time can generate hundreds of warnings. This should be addressed It is dangerous (and potentially expensive) to work like that.
+Existing projects where warnings had been disabled for a long time can generate hundreds of warnings. This should be addressed. It is dangerous (and potentially expensive) to work like that.
 
 Potential way to use warning in such projects:
 
@@ -37,20 +37,22 @@ Potential way to use warning in such projects:
 * Review the rest.
 * Communicate with the stakeholders and fix the most serious.
 * Cut down on the number of disabled warnings over time.
+* Consider to disallow new warnings entering your code base in your CI system to ensure to decrease warnings over time.
 
 ## See also
 
 * [Treat warnings as error](https://toolbox.basyskom.com/11)
+* [Continuous Integration keeps your project healthy](https://toolbox.basyskom.com/3)
 
 ## Implementation hints
 
 GCC/Clang:
 
 ```
-    -Wall -Wextra
+-Wall -Wextra
 ```
 
 Visual Studio:
 ```
-    /Wall
+/Wall
 ```

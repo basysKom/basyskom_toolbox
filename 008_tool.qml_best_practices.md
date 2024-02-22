@@ -7,9 +7,9 @@ Write future-proof QML code that is modular, efficient and maintainable.
 ## Description
 
 QML can help to create modern UIs across different platforms with ease. But as we all know: with great power comes great responsibility!
-Like with other languages there are pitfalls that might increase the implementation effort, degrade performance or reduce maintainability and code quality.
+Like with other languages, there are pitfalls that might increase implementation effort, degrade performance, or reduce maintainability and code quality.
 
-There are some DO and DONTS that help to avoid them.
+There are some DO and DONT'S that help to avoid them in the implementation hints.
 
 ## Environment
 
@@ -51,9 +51,9 @@ There are several rules of thumb that can improve the overall architecture and m
   * QML will climb up the parent tree and look for the id's if they're not found locally. It might find the same id in a whole different element!
   * Always giving the local root element an id and access its properties via this id avoids unintended cross-element references
   * This eases refactoring and maintainability
-* Stick to declarative coding and keep imperative JavaScript snippets minimal.
-  * This is OK for prototyping, but should be avoided in production code
-  * Avoid using JavaScript in hot spots, prefer C++ functions.
+* Stick to declarative coding and keep imperative JavaScript snippets minimal
+  * JavaScript snippets are OK for prototyping, but should be avoided in production code
+  * Avoid using JavaScript in hot spots, prefer C++ functions
 * Keep the UI simple
   * Do not code business logic in QML
   * Avoid complex expressions
@@ -63,12 +63,12 @@ There are several rules of thumb that can improve the overall architecture and m
   * Nest and use the basic elements inside more complex elements according to their role
   * This allows for easier code extensions or gradual refactoring.
 * Use the Style Singleton approach for [QML Styling](https://wiki.qt.io/Qml_Styling)
-  * Avoid creating necessary clones of identical objects
+  * Avoid creating clones of identical objects
 * Stick to [QML Coding Guidelines](https://doc.qt.io/qt-5/qml-codingconventions.html)
   * This makes it easy to maintain QML code and read QML code written by others
 * Use the Loader element to load bigger parts of the application on demand. [QML Loader](https://doc.qt.io/qt-5/qml-qtquick-loader.html)
 * Use QObject and its property system to build C++-interfaces to databases, devices or backend libraries.
-  * Once again: As small as possible and as large as necessary
+  * Once again: Design interfaces as small as possible and as large as necessary
   * Do not expose QObjects without a parent to QML, as the JavaScript garbage collector might clean them up
 * Keep the C++ implementation agnostic of the internal QML object tree composition and vice versa
 * Use Qt Creator for QML Profiler integration. [QML Profiler](https://doc.qt.io/qtcreator/creator-qml-performance-monitor.html)

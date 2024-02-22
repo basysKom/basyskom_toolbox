@@ -11,20 +11,20 @@ SCRUM is a framework that combines best practices of good teamwork. SCRUM is a p
 The five core principles of SCRUM are:
 
 * Self organisation
-* Continues delivery
-* Continues improvement and retrospectve
-* Transparency and openess
+* Continuous delivery
+* Continuous improvement and retrospectve
+* Transparency and openness
 * Timeboxing
 
 The agile values we follow are:
 
 * Respect
-* Openess
+* Openness
 * Courage
 * Commitment
 * Focus
 
-Kanban is a system to manage and visualize work as it moves through a process. It is great for service work and bug fixing phases and DevOp-Projects with a lot of unplaned work.
+Kanban is a system to manage and visualize work as it moves through a process. It is great for service work and bug-fixing phases and DevOp-Projects with a lot of unplaned work.
 
 The five core principles of Kanban are:
 
@@ -48,7 +48,7 @@ It depends.
 
 ## Applicability
 
-Small and large Projects.
+Small and large projects.
 
 ## Caveats
 

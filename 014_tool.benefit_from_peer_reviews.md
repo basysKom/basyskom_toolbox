@@ -18,7 +18,9 @@ All
 
 ## Implementation effort
 
-Minimal - just grab a colleague and present your code ;-). Tool support is helpful though as it decouples the participants and can easily tie in with a CI system.
+Minimal - just grab a colleague and present your code ;-). 
+
+Tool support is helpful though as it decouples the participants and can easily tie in with a CI system.
 
 ## Applicability
 
@@ -28,10 +30,13 @@ Minimal - just grab a colleague and present your code ;-). Tool support is helpf
 
 - Make sure to create an environment where code reviews are actual peer reviews, not top-down audit-style reviews by a senior developer.
 - Make sure to create an environment where people feel safe to participate.
+- Make sure that integrating a review into your CI system does not replace actual in depth peer reviews of larger changes. Different styles of review may co-exist, and should be used, depending on the changes made.
 
 ## See also
 
+\-
+
 ## Implementation hints
 
-- To support the reviewers and to improve consistency consider a checklist with general issues to look out for.
+- To support the reviewers and to improve consistency, consider a checklist with general issues to look out for.
 - Avoid wasting expensive reviewer time by having a first review stage where the review is done by bots (formatting issues, issues from static checkers, unit tests, spellcheckers, ...).

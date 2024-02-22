@@ -2,7 +2,7 @@
 
 ## Goals
 
-Make sure the program developed works well on the intended target - while still benefiting from fast iterations on the desktop.
+Make sure the program developed works well on the intended target - while still benefitting from fast iterations on the desktop.
 
 ## Description
 

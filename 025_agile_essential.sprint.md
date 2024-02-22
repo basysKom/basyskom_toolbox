@@ -6,13 +6,13 @@ Organize your work in sprints to have a close planning and review cycle
 
 ## Description
 
-A sprint starts with a sprint planning, where the team commits on the tasks to be done within the sprint. Through a daily call, you can achieve a close tracking of your progress. At the end of a sprint, the team demonstrates the product owner what has been achieved during the sprint. The sprint is closed by an internal retrospective as part of your continuous improvement process.
+A sprint starts with a sprint planning where the team commits on the tasks to be done within the sprint. Through a daily call, you can achieve a close tracking of your progress. At the end of a sprint, the team demonstrates to the Product Owner what has been achieved during the sprint. The sprint is closed by an internal retrospective as part of your continuous improvement process.
 
 A sprint can be split into three steps:
 
-- **Plan**, The team plans the sprint and commits to the sprint target
-- **Do**, This is the daily work, including a daly call and close communication and synchronisation
-- **Check (and Act)**, at the end of a sprint the team presents the results to the product owner. There are two parts to this step, while part one is the product presentations, part two is the internal retrospective as part of the own continues improvement process.
+- **Plan**: The team plans the sprint and commits to the sprint target
+- **Do**: This is the daily work, including a daily call and close communication and synchronisation
+- **Check (and Act)**: At the end of a sprint the team presents the results to the Product Owner. There are two parts to this step. Part one is the product presentations, part two is the internal retrospective as part of the continuous improvement process.
 
 ## Environment
 
@@ -28,10 +28,11 @@ Scrum requires time, estimate at least 6 team hours a week.
 
 ## Applicability
 
-New Projects
+New projects
 
 ## Caveats
 
+\-
 
 ## See also
 

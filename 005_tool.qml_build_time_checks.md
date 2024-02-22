@@ -6,7 +6,7 @@ Find QML issues already at build time.
 
 ## Description
 
-QML is weakly typed - issues might only show up during runtime when a document is actually loaded. Qt is offering several ways to improve this situation. Use either qmllint or the Qt Quick compiler to catch syntax errors already during build time. Consider adding this to your CI system to make the most out of it.
+QML is weakly typed - issues might only show up during runtime when a document is actually loaded. Qt is offering several ways to improve this situation. Use either `qmllint` or the Qt Quick compiler to catch syntax errors already during build time. Consider adding this to your CI system to make the most out of it.
 
 ## Environment
 
@@ -40,4 +40,4 @@ Ideally these tools are run as part of the build process.
 
 Given that you are already using QRCs for your QML documents you can just add `CONFIG+=qtquickcompiler` to your project.
 
-For CMake and more details see:  https://doc.qt.io/qt-5/qtquick-deployment.html#ahead-of-time-compilation
+For CMake and more details see: https://doc.qt.io/qt-5/qtquick-deployment.html#ahead-of-time-compilation

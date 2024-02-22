@@ -20,7 +20,7 @@ The best supported platform is probably X86_64/Linux with either GCC or clang bu
 
 ## Implementation effort
 
-Minimal, if your software (or a sub-set like for example the unit tests) already run on X86_64/Linux.
+Minimal, if your software (or a subset, for example the unit tests) already run on X86_64/Linux.
 
 ## Applicability
 
@@ -28,10 +28,12 @@ All projects using C and C++.
 
 ## Caveats
 
-- While the AddressSanitizer is significantly faster than Valgrind it still slows down program execution.
+- While the AddressSanitizer is significantly faster than Valgrind, it still slows down program execution.
 - The AddressSanitizer introduces a significant memory overhead.
 
 ## See also
+
+- [Use Valgrind or MemorySanitizer](https://toolbox.basyskom.com/15)
 
 ## Implementation hints
 

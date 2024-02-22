@@ -1,4 +1,4 @@
-# Valgrind or the MemorySanitizer help to ship reliable software
+# Use Valgrind or the MemorySanitizer help to ship reliable software
 
 ## Goals
 
@@ -14,26 +14,31 @@ C and C++/Qt
 
 ## Platform
 
-As a rule of thumb - Valgrind is available for most Unix-like platforms. See https://valgrind.org/info/platforms.html for details.
+Valgrind is available for most Unix-like platforms. See https://valgrind.org/info/platforms.html for details.
 
 The MemorySanitizer is currently only available with clang.
 
 ## Implementation effort
 
 If a program is already runnable on X86_64/Linux Valgrind can be employed very easily.
-While quite powerful - the MemorySanitizer is much harder to deploy. Unlike for example the AddressSanitizer it can't be partially applied to a program.
-Rule of thumb: try to use Valgrind first.
+
+While quite powerful - the MemorySanitizer is much harder to deploy. Unlike the AddressSanitizer it can't be partially applied to a program.
+
+*Rule of thumb: try to use Valgrind first.*
 
 ## Applicability
 
+\-
+
 ## Caveats
 
-* While Valgrind is available for a lot of Unix-like platforms, but practical usage is typically limited by the raw CPU speed of the target. Use on ARM is often not practical.
+* Valgrind is available for a lot of Unix-like platforms, but practical usage is typically limited by the raw CPU speed of the target. Use on ARM is often not practical.
 
 ## See also
 
 * [Continuous Integration](https://toolbox.basyskom.com/3)
 * [Unit tests](https://toolbox.basyskom.com/12)
+* [Use the AddressSanitizer](https://toolbox.basyskom.com/10)
 
 ## Implementation hints
 
